@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taste Haven - Order Summary</title>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="order-summary.css">
+</head>
+<body>
+
+  <nav class="breadcrumb">
+    <a href="index.html">Home</a> / <a href="cart.html">Cart</a> / <a href="#">Order Summary</a>
+  </nav>
+
+  <main class="summary-page">
+
+    <section class="order-summary-card">
+
+      <h2>Order Summary</h2>
+
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="summary-subtotal">&#8358;0.00</span>
+      </div>
+
+      <div class="summary-row">
+        <span>Delivery Fee</span>
+        <span id="summary-delivery">&#8358;0.00</span>
+      </div>
+
+      <div class="summary-row discount-row">
+        <span>Discount</span>
+        <span id="summary-discount">-&#8358;0.00</span>
+      </div>
+
+      <hr>
+
+      <div class="summary-row summary-total-row">
+        <span>Total</span>
+        <span id="summary-total">&#8358;0.00</span>
+      </div>
+
+      <div class="promo-row">
+        <input type="text" id="promo-input" placeholder="Enter promo code">
+        <button type="button" id="promo-apply-btn">Apply</button>
+      </div>
+
+      <ul class="delivery-info">
+
+        <li>
+          <span class="info-icon">&#128666;</span>
+          <div>
+            <p class="info-title">Estimated Delivery <span class="info-highlight">20 - 30 minutes</span></p>
+            <p class="info-text">We'll deliver your order hot and fresh!</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="info-icon">&#127793;</span>
+          <div>
+            <p class="info-title">Fresh Ingredients</p>
+            <p class="info-text">We use only the freshest and highest quality ingredients</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="info-icon">&#128666;</span>
+          <div>
+            <p class="info-title">Fast Delivery</p>
+            <p class="info-text">Quick and reliable delivery straight to your door.</p>
+          </div>
+        </li>
+
+        <li>
+          <span class="info-icon">&#128737;&#65039;</span>
+          <div>
+            <p class="info-title">Secure Checkout</p>
+            <p class="info-text">Your information is safe and protected with us.</p>
+          </div>
+        </li>
+
+      </ul>
+
+      <a href="checkout.html">
+      <button type="button" class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+      </a>
+    </section>
+
+  </main>
+
+  <script src="order-summary.js"></script>
+</body>
+</html>

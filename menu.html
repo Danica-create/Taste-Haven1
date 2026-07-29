@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Images/Taste Haven Logo.png" alt="Taste Haven logo" class="page-logo">
+
+            <!-- Hamburger checkbox -->
+            <input type="checkbox" id="menu">
+            <label for="menu" class="hamburger">&#9776;</label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <a href="">
+                <button class="login-button1">Login</button>
+            </a>
+            </ul>
+
+        <section class="search-cart-login">
+            <img src="Images/search-01.png" alt="Search icon">
+
+            <a href="cart.html">
+                <img src="Images/shopping-cart-add-02.png" alt="Cart icon">
+            </a>
+
+            <a href="">
+                <button class="login-button2">Login</button>
+            </a>
+        </section>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="local"> 
+        <section class="local-dishes-heading">
+        <h2>Local dishes</h2> <hr class="line"> 
+        <div class="fifteen-dishes-box">15 dishes</div>
+        </section>
+        <p class="local-dishes-headingtext">Authentic flavours from home</p>
+       </section>
+
+
+       <section class="swallow-section">
+        <p class="section-header">SWALLOW</p>
+
+        <section class="all-swallow">
+            <section class="semo-section">
+                <img src="Images/Semo and egusi.png" alt="semo and egusi" class="semo">
+            
+                <section class="semo-text-section">
+                    <p class="semo-heading">Semo & Egusi</p>
+                    <p class="semo-text">Smooth semolina swallow with a hearty melon seed (egusi) soup, assorted meat, stockfish, and uziza leaves.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#10,000</h3>
+
+                        <button onclick="addToCart('Semo & Egusi soup', 10000, 'Images/Semo and egusi.png','Smooth semolina swallow with a hearty melon seed (egusi) soup, assorted meat, stockfish, and uziza leaves.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="amala-section">
+                <img src="Images/Amala and abula.png" alt="amala" class="amala">
+            
+                <section class="amala-text-section">
+                    <p class="amala-heading">Amala & Abula Soup</p>
+                    <p class="amala-text">Silky dark yam flour swallow served with slippery ewedu (jute leaf) soup and gbegiri (bean soup), topped with assorted stew.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#7,000</h3>
+
+                        <button onclick="addToCart('Amala & Abula Soup', 7000, 'Images/Amala and abula.png','Silky dark yam flour swallow served with slippery ewedu (jute leaf) soup and gbegiri (bean soup), topped with assorted stew.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+
+            <section class="fufu-section">
+                <img src="Images/Fufu and oha.png" alt="fufu" class="fufu">
+            
+                <section class="fufu-text-section">
+                    <p class="fufu-heading">Fufu & Oha Soup</p>
+                    <p class="fufu-text">Smooth pounded cassava fufu served with oha leaf soup cooked with crayfish, palm oil, cocoyam, and assorted meats.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#8,500</h3>
+
+                        <button onclick="addToCart('Fufu & Oha Soup', 8500, 'Images/Fufu and oha.png','>Smooth pounded cassava fufu served with oha leaf soup cooked with crayfish, palm oil, cocoyam, and assorted meats.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+
+            
+        </section>
+       </section>
+
+
+       <section class="rice-dishes-section">
+        <p class="section-header">RICE</p>
+
+        <section class="all-rice-dishes">
+            <section class="jollof-section" id="jollof">
+                <img src="Images/Jollofrice (2).png" alt="jollof" class="jollof">
+            
+                <section class="jollof-text-section">
+                    <p class="jollof-heading">Jollof Rice & Plantain</p>
+                     <p class="jollof-text">Party-style jollof rice slow-cooked in a rich tomato and pepper base, served with golden fried plantain and a side of coleslaw.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#7,000</h3>
+
+                        <button onclick="addToCart('Jollof Rice & Plantain', 7000, 'Images/Jollofrice (2).png','Party-style jollof rice slow-cooked in a rich tomato and pepper base, served with golden fried plantain and a side of coleslaw.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="native-section">
+                <img src="Images/nativerice.png" alt="native" class="native">
+            
+                <section class="native-text-section">
+                    <p class="native-heading">Native Rice</p>
+                    <p class="native-text">Fragrant, palm oil-infused Native Rice, smoky from the firewood, studded with smoked fish and locust beans (iru), and kicking with pepper.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#8,000</h3>
+
+                        <button onclick="addToCart('Native Rice', 8000, 'Images/nativerice.png','Fragrant, palm oil-infused Native Rice, smoky from the firewood, studded with smoked fish and locust beans (iru), and kicking with pepper.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+
+            <section class="ofada-section">
+                <img src="Images/ofadarice.png" alt="ofada" class="ofada">
+            
+                <section class="ofada-text-section">
+                    <p class="ofada-heading">Ofada Rice</p>
+                    <p class="ofada-text">Unpolished local ofada rice wrapped in banana leaf, served with smoky ayamase (green pepper) stew and assorted offal.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#12,500</h3>
+
+                        <button onclick="addToCart('Ofada Rice', 12500, 'Images/ofadarice.png','Unpolished local ofada rice wrapped in banana leaf, served with smoky ayamase (green pepper) stew and assorted offal.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+
+            
+        </section>
+       </section>
+
+
+
+         <!-- <p class="section-header">BEANS</p>
+
+       <section class="beans-section">
+        <section class="all-beans">
+            <section class="ewa-section">
+                <img src="Images/ewaagoyin.png" alt="ewa-agoyin" class="ewa-agoyin">
+            
+                <section class="ewa-text-section">
+                    <p class="ewa-heading">Ewa Agoyin</p>
+                    <p class="ewa-text">Soft, buttery-mashed honey beans submerged in a rich, deeply caramelized palm oil pepper sauce with a signature dark, smoky finish.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#1,000</h3>
+
+                        <button onclick="addToCart('Ea Agoyin', 1000, 'Images/ewaagoyin.png','Soft, buttery-mashed honey beans submerged in a rich, deeply caramelized palm oil pepper sauce with a signature dark, smoky finish.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="moimoi-section">
+                <img src="Images/moimoi.png" alt="moimoi" class="moimoi">
+            
+                <section class="moimoi-text-section">
+                    <p class="moimoi-heading">Moi Moi</p>
+                    <p class="moimoi-text">Savory, velvety-smooth steamed bean pudding—richly seasoned, fragrant with pepper and uma leaves, and beautifully tender with every bite.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#2,000</h3>
+
+                        <button onclick="addToCart('Moimoi', 2000, 'Images/moimoi.png','Savory, velvety-smooth steamed bean pudding—richly seasoned, fragrant with pepper and uma leaves, and beautifully tender with every bite.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+
+            <section class="beans-porridge-section">
+                <img src="Images/beansporridge.png" alt="beansPorridge" class="beansPorridge">
+            
+                <section class="beans-porridge-text-section">
+                    <p class="beans-heading">Beans Porridge</p>
+                    <p class="beans-text">Savory, velvety-smooth steamed bean pudding—richly seasoned, fragrant with pepper and uma leaves, and beautifully tender with every bite.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#1,500</h3>
+
+                        <button onclick="addToCart('beansPorridge', 1500, 'Images/beansporridge.png','Savory, velvety-smooth steamed bean pudding—richly seasoned, fragrant with pepper and uma leaves, and beautifully tender with every bite.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+
+            
+        </section>
+        </section> -->
+
+
+        <!-- <p class="section-header">PROTEIN</p>
+
+       <section class="protein-section">
+            
+
+            <section class="all-protein-dishes">
+                <section class="beef-section">
+                    <img src="Images/beef.png" alt="beef" class="beef">
+            
+                    <section class="beef-text-section">
+                        <p class="beef-heading">Beef</p>
+                        <p class="beef-text">Beef: Juicy, deeply seasoned cuts of beef, pan-seared or slow-simmered until tender with a rich, savory crust.
+                        </p>
+                        <div class="price-and-addtocart">
+                            <h3 class="price">#1,000</h3>
+
+                            <button onclick="addToCart('Beef', 1000, 'Images/beef.png','Beef: Juicy, deeply seasoned cuts of beef, pan-seared or slow-simmered until tender with a rich, savory crust.', this)" id="cart-button">Add to cart</button>
+                        </div>
+                    </section>
+
+                </section>
+
+                <section class="chicken-section">
+                    <img src="Images/chicken.png" alt="chicken" class="chicken">
+            
+                    <section class="chicken-text-section">
+                        <p class="chicken-heading">Chicken</p>
+                            <p class="chicken-text">Tender, golden-roasted chicken, seeped in aromatic spices with a crisp, seasoned skin and succulent center.
+                            </p>
+                        <div class="price-and-addtocart">
+                            <h3 class="price">#4,000</h3>
+
+                            <button onclick="addToCart('Chicken', 4000, 'Images/chicken.png','Tender, golden-roasted chicken, seeped in aromatic spices with a crisp, seasoned skin and succulent center.', this)" id="cart-button">Add to cart</button>
+                        </div>
+                    </section>
+                </section>
+
+            <section class="turkey-section">
+                <img src="Images/turkey.png" alt="turkey" class="turkey">
+            
+                <section class="turkey-text-section">
+                    <p class="turkey-heading">Turkey</p>
+                    <p class="turkey-text">Dark-golden turkey, deeply seasoned, flash-fried or roasted for a crisp outer crunch and juicy, full-bodied flavor.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#6,500</h3>
+
+                        <button onclick="addToCart('Turkey', 6500, 'Images/turkey.png','Dark-golden turkey, deeply seasoned, flash-fried or roasted for a crisp outer crunch and juicy, full-bodied flavor.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section> -->
+
+            
+
+            <section class="side-dishes">
+        <p class="header">^SIDE DISHES</p>
+
+        <section class="all-side-dishes">
+            <section class="dishes">
+                <img src="Images/dodo.png" alt="plantain" class="imgg">
+            
+                <section class="section">
+                     <div class="rating">
+                    <p class="heading">Plantain</p>
+                    <!-- <p class="rate">⭐ 4.8</p> -->
+                     </div>
+                    <p class="text">Sweet, golden-fried plantain slices with caramelized, crispy edges and a melt-in-your-mouth tender core.</p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#1,000</h3>
+
+                        <button onclick="addToCart('Plantain', 1000, 'Images/dodo.png','Sweet, golden-fried plantain slices with caramelized, crispy edges and a melt-in-your-mouth tender core', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+
+            </section>
+            <section class="dishes">
+                <img src="Images/abacha.png" alt="side dishes" class="imgg">
+            
+                <section class="section">
+                     <div class="rating">
+                    <p class="heading">African Salad(abacha)</p>
+                    <!-- <p class="rate">⭐ 4.5</p> -->
+                    </div>
+                    <p class="text">Tender, shred-cut cassava salad tossed in a rich, spicy palm oil emulsion, fragrant with calabash nutmeg and garden egg leaves.</p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#4,000</h3>
+
+                        <button onclick=" addToCart('African Salad (abacha)', 4000, 'Images/abacha.png','Tender, shred-cut cassava salad tossed in a rich, spicy palm oil emulsion, fragrant with calabash nutmeg and garden egg leaves.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="dishes">
+                <img src="Images/ponmo.png" alt="spagetti bolognese" class="imgg">
+            
+                <section class="section">
+                    <div class="rating">
+                    <p class="heading">Ponmo</p>
+                    <!-- <p class="rate">⭐ 4.7</p> -->
+                    </div>
+                    <p class="text">Chewy, deeply seasoned cow skin—slow-cooked to absorb every drop of rich, peppery broth with a satisfying bite.</p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#6,500</h3>
+
+                        <button onclick="addToCart('Ponmo', 6500, 'Images/ponmo.png','Chewy, deeply seasoned cow skin—slow-cooked to absorb every drop of rich, peppery broth with a satisfying bite.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+
+            </section>
+
+            
+        </section>
+    </section>
+
+
+
+
+
+
+       <section id="international"> 
+        <section class="international-dishes-heading">
+        <h2>International</h2> <hr class="line"> 
+        <div class="six-dishes-box">6 dishes</div>
+        </section>
+        <p class="international-dishes-headingtext">Global cuisines, made with care</p>
+       </section>
+
+
+       <section class="pasta-section">
+        <p class="section-header">PASTA</p>
+
+        <section class="all-pasta">
+            <section class="spagetti-bolognese-section">
+                <a href="bolognese.html">
+                <img src="Images/Spagetti bolognese (order page).png" alt="spagetti bolognese" class="spagetti-bolognese">
+                </a>
+                <section class="spagetti-text-section">
+                    <p class="spagetti-heading">Spagetti Bolognese</p>
+                    <p class="spagetti-text">Classic italian-style spagetti topped with rich,
+                        slow-cooked minced beef and tomato sauce, seasoned with herbs and finished with grated Parmesan cheese.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#12,000</h3>
+
+                        <button onclick="addToCart('Spagetti bolognese', 12000, 'Images/Spagetti bolognese (order page).png','Classic italian-style spagetti topped with rich, slow-cooked minced beef and tomato sauce, seasoned with herbs and finished with grated Parmesan cheese.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="alfredo-pasta-section">
+                <a href="alfredo.html">
+                <img src="Images/Alfredo pasta (order page).png" alt="alfredo pasta" class="alfredo-pasta">
+                </a>
+
+                <section class="alfredo-text-section">
+                    <p class="alfredo-heading">Alfredo Pasta</p>
+                    <p class="alfredo-text">Tender pasta coated in a luxurious, velvety sauce of heavy cream,
+                        melted butter, and freshly aged Parmesan.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#9,000</h3>
+
+                        <button onclick="addToCart('Alfredo Pasta', 9000, 'Images/Alfredo pasta (order page).png','Tender pasta coated in a luxurious, velvety sauce of heavy cream, melted butter, and freshly aged Parmesan.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+
+            <section class="lasagna-section">
+                <a href="lasagna.html">
+                <img src="Images/Lasagna(order page).png" alt="lasagna" class="lasagna">
+                </a>
+                <section class="lasagna-text-section">
+                    <p class="lasagna-heading">Lasagna</p>
+                    <p class="lasagna-text">Layered sheets of pasta packed with savory meat sauce,
+                        creamy bechamel, and melted cheese, baked to golden, bubbly perfetion.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#20,500</h3>
+
+                        <button onclick="addToCart('Lasagna', 20500, 'Images/Lasagna(order page).png','Layered sheets of pasta packed with savory meat sauce, creamy bechamel, and melted cheese, baked to golden, bubbly perfetion.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+
+            
+        </section>
+       </section>
+
+
+       <section class="meat-dishes-section">
+        <p class="section-header">MEAT DISHES</p>
+
+        <section class="all-meat-dishes">
+            <section class="chicken-parmesan-section">
+                <a href="parmesan.html">
+                <img src="Images/Chicken parmesan (order page).png" alt="chicken parmesan" class="chicken-parmesan">
+                </a>
+                <section class="chicken-text-section">
+                    <p class="chicken-heading">Chicken Parmesan</p>
+                    <p class="chicken-text">Crispy, herb-crusted chicken cutlets smothered in rich marinana, melted mozzarella
+                        and toasted Parmesan, baked to golden perfection.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#17,000</h3>
+
+                        <button onclick="addToCart('Chicken Parmesan', 17000, 'Images/Chicken parmesan (order page).png','Crispy, herb-crusted chicken cutlets smothered in rich marinana, melted mozzarella and toasted Parmesan, baked to golden perfection.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="italian-meatball-section">
+                <a href="">
+                <img src="Images/Italian meatballs (order page).png" alt="alfredo pasta" class="italian-meatball">
+                </a>
+                <section class="meatball-text-section">
+                    <p class="meatball-heading">Italian Meatballs</p>
+                    <p class="meatball-text">Plump, tender beef-and-pork meatballs slow-simmered in a fragrant basil-marzano sauce with fresh Italian herbs.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#9,000</h3>
+
+                        <button onclick="addToCart('Italian Meatballs', 9000, 'Images/Italian meatballs (order page).png','Plump, tender beef-and-pork meatballs slow-simmered in a fragrant basil-marzano sauce with fresh Italian herbs.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+
+            <section class="grilled-steak-section">
+                <img src="Images/Steak with vegetables (order page).png" alt="grilled steak" class="grilled-steak">
+            
+                <section class="steak-text-section">
+                    <p class="steak-heading">Grilled Steak</p>
+                    <p class="steak-text">Juicy, flame-seared steak rubbed with garlic, rosemary, and extra virgin olive oil, finished with a bright squeeze of lemon.
+                    </p>
+                    <div class="price-and-addtocart">
+                        <h3 class="price">#20,500</h3>
+
+                        <button onclick="addToCart('Grilled steak', 20500, 'Images/Steak with vegetables (order page).png','Juicy, flame-seared steak rubbed with garlic, rosemary, and extra virgin olive oil, finished with a bright squeeze of lemon.', this)" id="cart-button">Add to cart</button>
+                    </div>
+                </section>
+            </section>
+
+            
+        </section>
+       </section>
+    </main>
+    <script src="menu.js"></script>
+</body>
+</html>

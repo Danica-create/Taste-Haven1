@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Taste Haven</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="auth-page signup-page">
+
+    <div class="hero-text">
+        <h1>Your next meal starts here!</h1>
+        <p>Sign in to browse recipes, order from local spots and save your favorites.</p>
+    </div>
+
+    <div class="auth-card">
+
+        <h1>Sign up</h1>
+
+        <form id="signupForm">
+
+            <div class="name-row">
+                <div class="form-group">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone number</label>
+                <div class="phone-input">
+                    <span class="country-code">🇳🇬 +234</span>
+                    <input type="tel" id="phone" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label-row">
+                    <label for="password">Password</label>
+                    <button type="button" class="toggle-password" data-target="password">Show</button>
+                </div>
+                <input type="password" id="password" required>
+                <p class="hint-text">Use 8 or more characters with a mix of letters, numbers &amp; symbols</p>
+            </div>
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">By creating an account, I agree to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+
+            <div class="action-row">
+                <button type="submit" class="btn-primary">Sign up</button>
+                <p class="switch-text">Already have an account? <a href="login.html">Log in</a></p>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

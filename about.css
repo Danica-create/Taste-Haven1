@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.hero {
+  background-color: #f8f1e9;
+  padding: 20px;
+}
+
+.hero p.label {
+  color: #FF0000;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.hero p.description {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #8B0000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero img {
+  margin-top: 20px;
+}
+
+.story {
+  padding: 20px;
+}
+
+.story img {
+  margin-bottom: 20px;
+}
+
+.story h2 {
+  font-size: 24px;
+  margin: 10px 0 15px 0;
+}
+
+.text-block .label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FF0000;
+}
+
+.story p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.stat-box {
+  background-color: #f8f1e9;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.stat-box img {
+  width: 30px;
+  margin: 0 auto 10px auto;
+}
+
+.stat-box .number {
+  font-weight: bold;
+  font-size: 22px;
+  color: #8B0000;
+  margin-bottom: 2px;
+  line-height: 1.1;
+}
+
+.stat-box .stat-label {
+  font-size: 13px;
+  color: #555;
+}
+
+.stand-for {
+  background-color: #f8f1e9;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.stand-for h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.stand-for > p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card .icon img {
+  width: 40px;
+  margin: 0 auto 10px auto;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #666;
+}
+
+.chefs {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #f8f1e9;
+}
+
+.chefs h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.chef-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.chef-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.chef-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px auto;
+}
+
+.chef-card h3 {
+  font-size: 16px;
+}
+
+.chef-card .role {
+  color: #FF0000;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.chef-card p.bio {
+  font-size: 13px;
+  color: #666;
+}
+
+.why-us {
+  padding: 30px 20px;
+  background-color: #f8f1e9;
+}
+
+.why-us img {
+  margin-bottom: 20px;
+}
+
+.why-us p.label {
+  color: #a12c2c;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.why-us h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.check-item .checkmark {
+  background-color: #8B0000;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.gallery {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.gallery-grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.gallery-grid img,
+.gallery-grid2 img {
+  height: 220px;
+  object-fit: cover;
+}
+
+@media (min-width: 900px) {
+  .hero,
+  .story,
+  .stand-for,
+  .chefs,
+  .why-us,
+  .gallery {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero .container,
+  .story .container,
+  .why-us .container,
+  .stand-for > p,
+  .cards-grid,
+  .chef-grid,
+  .gallery-grid,
+  .gallery-grid2 {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .hero .text-block {
+    width: 48%;
+  }
+
+  .hero .image-block {
+    width: 48%;
+  }
+
+  .hero img {
+    margin-top: 0;
+    max-height: 320px;
+    object-fit: cover;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .story .container {
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .story .image-block {
+    width: 48%;
+  }
+
+  .story .text-block {
+    width: 48%;
+  }
+
+  .story img {
+    margin-bottom: 0;
+    max-height: 340px;
+    object-fit: cover;
+  }
+
+  .stats {
+    flex-direction: row;
+  }
+
+  .stat-box {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    padding: 10px 12px;
+  }
+
+  .stat-box img {
+    width: 26px;
+    margin: 0;
+  }
+
+  .stat-box .number {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .stat-box .stat-label {
+    font-size: 12px;
+  }
+
+  .cards-grid {
+    margin: 0 150px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .chef-grid {
+    margin: 0 80px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .chef-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .chef-image img {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+  }
+
+  .why-us .container {
+    margin: 0 50px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .why-us .image-block {
+    width: 48%;
+  }
+
+  .why-us .text-block {
+    width: 48%;
+  }
+
+  .why-us img {
+    margin-bottom: 0;
+    max-height: 320px;
+    object-fit: cover;
+  }
+
+  .checklist {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid img,
+  .gallery-grid2 img {
+    height: 160px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery-grid2 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

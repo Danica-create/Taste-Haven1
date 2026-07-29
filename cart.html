@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taste Haven - Your Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <nav class="breadcrumb">
+    <a href="index.html">Home</a> / <a href="cart.html">Cart</a>
+  </nav>
+
+  <main class="cart-page">
+
+    <section class="cart-heading">
+      <h1>Your Cart</h1>
+      <p>Review your selected meals before proceeding to checkout.</p>
+    </section>
+
+    <aside class="delivery-banner">
+      <p>&#127873; You're <strong>&#8358;2,000.00</strong> away from free delivery!</p>
+    </aside>
+
+    <section class="cart-items">
+
+      <header class="cart-items__header">
+        <p class="col-item">Item</p>
+        <p class="col-price">Price</p>
+        <p class="col-total">Total</p>
+      </header>
+
+      <section id="cart-list">
+        <!-- cart.js fills this in with <article class="cart-item"> blocks -->
+      </section>
+
+    </section>
+
+    <p class="cart-grand-total">Total: <data id="cart-total" value="0">&#8358;0.00</data></p>
+
+    <a href="menu.html" class="btn continue-shopping-btn">&#8594; Continue Shopping</a>
+
+    <a href="order-summary.html" class="btn checkout-link-btn">Proceed to Order Summary &#8594;</a>
+
+  
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>
+
+

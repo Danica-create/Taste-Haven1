@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <img src="Images/Taste Haven Logo.png" alt="Taste Haven logo" class="page-logo">
+
+            <!-- Hamburger checkbox -->
+            <input type="checkbox" id="menu">
+            <label for="menu" class="hamburger">&#9776;</label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <a href="login.html">
+                <button class="login-button1">Login</button>
+            </a>
+            </ul>
+
+        <section class="search-cart-login">
+            <img src="Images/search-01.png" alt="Search icon">
+
+            <a href="cart.html">
+                <img src="Images/shopping-cart-add-02.png" alt="Cart icon">
+            </a>
+
+            <a href="login.html">
+                <button class="login-button2">Login</button>
+            </a>
+        </section>
+
+        </nav>
+    </header>
+
+
+    <form id="myForm">
+
+<h2><img src="images/contact.png" width="2%">Contact Information</h2>
+
+<label>First Name</label>
+<input type="text" id="name">
+<span id="nameError" class="error"></span>
+
+<label>Phone Number</label>
+<input type="tel" id="number">
+<span id="numberError" class="error"></span>
+
+<label>Email (Optional)</label>
+<input type="email" id="email">
+<span id="emailError" class="error"></span>
+
+
+<h2> <img src="images/Delivery.png" width="2%">Delivery Address</h2>
+
+<label>Street Address</label>
+<textarea id="address"></textarea>
+<span id="addressError" class="error"></span>
+
+<label>City</label>
+<input type="text" id="city">
+<span id="cityError" class="error"></span>
+
+<label>State</label>
+<input type="text" id="state">
+<span id="stateError" class="error"></span>
+
+<label>Landmark (Optional)</label>
+<input type="text" id="landmark">
+
+
+<h2> <img src="images/Adress.png"  width="2%">Delivery Method</h2>
+
+<div class="delivery-method">
+
+    <div class="option">
+        <input type="radio" id="delivery" name="deliveryMethod" value="Delivery">
+        <label for="delivery">
+            <strong>Delivery</strong><br>
+            We'll deliver your order to your address.
+        </label>
+    </div>
+
+    <div class="option">
+        <input type="radio" id="pickup" name="deliveryMethod" value="Pickup">
+        <label for="pickup">
+            <strong>Pickup</strong><br>
+            Pick up your order from our restaurant.
+        </label>
+    </div>
+
+</div>
+
+<span id="deliveryError" class="error"></span>
+<!-- <h2>Delivery Method</h2>
+
+<input type="radio" id="delivery" name="deliveryMethod" value="Delivery">
+<label for="delivery">Delivery</label>
+
+<input type="radio" id="pickup" name="deliveryMethod" value="Pickup">
+<label for="pickup">Pickup</label>
+
+<span id="deliveryError" class="error"></span> -->
+
+<h2>Payment Method</h2>
+
+<div class="payment-method">
+
+    <div class="option">
+        <img src="images/download (8).png" width="4%">
+        <!-- <input type="text" id="whatsapp" name="paymentMethod" value="WhatsApp">
+        <label  for="whatsapp"> --> <br>
+            <strong>WhatsApp Payment</strong><br>
+            You will be redirected to WhatsApp to complete your payment <br>
+            securely with our team.
+        </label>
+        
+    </div>
+
+    <!-- <div class="option">
+        <input type="radio" id="cash" name="paymentMethod" value="Cash">
+        <label for="cash">
+            <strong>Cash on Delivery</strong><br>
+            Pay when your order arrives.
+        </label>
+    </div> -->
+
+</div>
+
+<span id="paymentError" class="error"></span>
+
+<br>
+
+<button type="submit"><a href="https://wa.me/2347016208308" target="_blank">Proceed to WhatsApp</a></button>
+<!-- <h2>Payment Method</h2>
+
+<input type="radio" id="whatsapp" name="payment" value="Whatsapp">
+<label for="whatsapp">WhatsApp Payment</label>
+
+<input type="radio" id="cash" name="payment" value="Cash">
+<label for="cash">Cash on Delivery</label>
+
+<span id="paymentError" class="error"></span> -->
+<!-- 
+<br><br>
+
+<button type="submit">Proceed to Whatsapp</button> -->
+
+</form>
+
+
+
+<script src="checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Images/Taste Haven Logo.png" alt="Taste Haven logo" class="page-logo">
+
+            <!-- Hamburger checkbox -->
+            <input type="checkbox" id="menu">
+            <label for="menu" class="hamburger">&#9776;</label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li id="cart-link"><a href="cart.html">Cart</a></li>
+                <a href="login.html">
+                <button class="login-button1">Login</button>
+            </a>
+            </ul>
+
+        <section class="search-cart-login">
+            <img src="Images/search-01.png" alt="Search icon">
+
+            <a href="cart.html">
+                <img src="Images/shopping-cart-add-02.png" alt="Cart icon">
+            </a>
+
+            <a href="login.html">
+                <button class="login-button2">Login</button>
+            </a>
+        </section>
+
+        </nav>
+    </header>
+
+    <main>
+       <section class="hero-section"> 
+        <section>
+            <p class="hero-text1"><img src="Images/emojione_star.png" alt="star emoji"> Great Food <img src="Images/Vector.png" alt="">  Great Vibes  <img src="Images/Vector.png" alt="">  Great Experience</p>
+            <h1 class="hero-headertext">From <span id="local">Local Delicacies</span> to <span id="global">Global Favorites</span></h1>
+            <p class="hero-text2">Enjoy freshly prepared Nigerian classics alongside carefully selected dishes-all made with premium ingredients and delivered fresh.</p>
+
+            <a href="menu.html">
+            <button class="order-now-button">Order Now</button>
+            </a>
+
+            <img src="Images/Rating profile.png" alt="ratings" class="ratings">
+        </section>
+
+        <!-- <button class="order-now-button">Order Now</button> -->
+
+        <section class="slider">
+            <img src="Images/Property 1=Default.png" alt="" id="sliderImage" class="hero-image">
+            <!-- <img src="Images/Property 1=Variant2.png" alt="" id="hero-image2" class="slide"> -->
+        </section>
+       
+       </section>
+
+        <p class="cuisine-header">BROWSE BY CUISINE</p>
+        <section class="browse-cuisine">
+            <section class="nigerian-cuisine">
+                <section class="nigeriancuisine-text">
+                <p class="nigerian-p1">Nigerian Cuisine</p>
+                <p class="nigerian-p">Traditional dishes made with rich local flavours and love.</p>
+
+                <a href="menu.html#local">
+                <button class="nigerian-menu-button">Nigerian Menu</button>
+                </a>
+                </section>
+
+                <img src="Images/Frame 1.png" alt="pounded yam image" class="pounded-yam-image">
+            </section>
+
+            <section class="international-cuisine">
+                <section class="internationalcuisine-text"> 
+                <p class="international-p1">International Cuisine</h5>
+                <p class="international-p">A world of flavours from global cuisines, prepared to perfection.</p>
+
+                <a href="menu.html#international">
+                <button class="international-menu-button">International Menu</button>
+                </a>
+                </section>
+
+                <img src="Images/Lasagna (home page).png" alt="lasagna image" class="lasagna-image">
+            </section>
+        </section>
+
+
+
+        <section class="featured">
+    <div class="featured-container">
+
+        <h2>FEATURED DISHES</h2>
+
+        <p class="subtitle">
+            From authentic Nigerian meals to international favorites,
+            discover dishes prepared with fresh ingredients and
+            exceptional taste.
+        </p>
+
+        <!-- Categories -->
+        <div class="categories">
+            <button>Rice</button>
+            <button>Soup</button>
+            <button>Swallow</button>
+            <button>Protein</button>
+            <button>Pasta</button>
+            <button>Desserts</button>
+            <button>Grills</button>
+        </div>
+
+        <!-- Food Cards -->
+        <div class="food-container">
+
+            <!-- Card 1 -->
+            <div class="food-card">
+                <img src="/images/Frame 56.png">
+
+                <div class="food-info">
+                    <small>Nigerian</small>
+
+                    <h3>Native Rice</h3>
+
+                    <p>
+                        Premium native rice served with a
+                        sprinkle of spring onions.
+                    </p>
+
+                    <div class="price-rating">
+                        <span>⭐ 4.7</span>
+                        <span class="price">₦6,000.00</span>
+                    </div>
+
+                    <button onclick="addToCart('Native rice', 6000, '/images/Frame 56.png','Premium native rice served with a sprinkle of spring onions.',this)" class="cart-btn">
+                        Add to Cart 🛒
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="food-card">
+                <img src="/images/Frame 56 (8).png">
+
+                <div class="food-info">
+                    <small>International</small>
+
+                    <h3>Italian Steak</h3>
+
+                    <p>
+                        Italian rare grilled steak,
+                        seasoned to perfection.
+                    </p>
+
+                    <div class="price-rating">
+                        <span>⭐ 4.8</span>
+                        <span class="price">₦12,000.00</span>
+                    </div>
+
+                    <button onclick="('Italian steak', 12000, '/images/Frame 56 (8).png','Italian rare grilled steak, seasoned to perfection.',this)" class="cart-btn">
+                        Add to Cart 🛒
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="food-card">
+                <img src="/images/Frame 56 (12).png">
+
+                <div class="food-info">
+                    <small>Nigerian</small>
+
+                    <h3>Semo & Egusi Soup</h3>
+
+                    <p>
+                        Soft and fluffy pounded semo
+                        served with delicious egusi.
+                    </p>
+
+                    <div class="price-rating">
+                        <span>⭐ 4.6</span>
+                        <span class="price">₦3,000.00</span>
+                    </div>
+
+                    <button onclick="('Semo & Egusi', 3000, '/images/Frame 56 (12).png','Soft and fluffy pounded semo served with delicious egusi.',this)" class="cart-btn">
+                        Add to Cart 🛒
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="food-card">
+                <img src="/images/Frame 56 (14).png">
+
+                <div class="food-info">
+                    <small>International</small>
+
+                    <h3>Spaghetti Bolognese</h3>
+
+                    <p>
+                        Twirled pasta served with rich
+                        tomato and meat sauce.
+                    </p>
+
+                    <div class="price-rating">
+                        <span>⭐ 4.7</span>
+                        <span class="price">₦12,000.00</span>
+                    </div>
+
+                    <button onclick="('Spaghetti bolognese', 12000, '/images/Frame 56 (14).png','Twirled pasta served with rich tomato and meat sauce.', this)" class="cart-btn">
+                        Add to Cart 🛒
+                       </button>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="menu.html">
+        <button class="explore-btn">
+            Explore Full Menu →
+        </button>
+        </a>
+
+    </div>
+</section>
+
+
+
+  <h2 class="head-text">WHY CHOOSE US</h2>
+<section class="total-section">
+    
+    <div class="second-part"> 
+        <div class="chef-image">
+            <img src="/images/chef-imagee.png">
+
+        </div>
+        
+        <div class="second-part-text">
+            <h1 class="second-part-header">More Than Just Great Food</h1>
+            <p class="second-part-sub">We combine authentic recipes, fresh ingredients, and exceptional service to deliver an unforgetable dining experience.</p>
+
+        
+            <div class="items-1">
+
+            
+                <div class="unit-item">
+                    <img src="Images/Frame 117.png">
+           
+                    <div>
+                        <h3>Fresh Ingredients</h3>
+                        <p>Every meal is prepared with carefully selected, fresh and natural ingredients.</p>
+                    </div>
+            
+                </div>
+
+            
+                <div class="unit-item">
+                    <img src="Images/Frame 117 (2).png">
+                
+                    <div>
+                   
+                        <h3>Expert Chefs</h3>
+                        <p>Skilled chefs bringing local and international recipes to life.</p>
+                
+                    </div>
+                </div>
+            
+            </div>
+            
+
+
+            
+        
+            <div class="items-2">
+
+            
+                <div class="unit-item">
+                    <img src="Images/Frame 117 (1).png">
+                
+                    <div>
+                    
+                        <h3>Fast Delivery</h3>
+                        <p>Hot meals delivered quickly and safely to your doorstep</p>
+                
+                    </div>
+                </div>
+
+            
+
+            
+                <div class="unit-item">
+                    <img src="Images/Frame 117 (3).png">
+                
+                    <div>
+                    
+                        <h3>Top Rated</h3>
+                        <p>Thousands of satisfied customers with outstanding reviews and ratings.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="third-part">
+        <div class="text-content">
+            <p>A perfect mix of Nigerian smokey jollof rice and grilled chicken</p>
+            <h3>TODAY'S SPECIAL</h3>
+            <a href="menu.html#jollof">
+            <button class="jollof-button">Jollof Rice</button>
+            </a>
+            <h1>20% OFF</h1>
+            <button class="order-button">Order Now</button>
+
+        </div>
+
+        <img src="/images/jollofrice.png" alt="jollof-rice">
+
+
+
+
+    </div>
+
+</section>
+
+
+<section class="second-total-section">
+    <div class="section-text">
+        <h2>HOW IT WORKS</h2>
+        <p>Simple Steps To Delicious Food</p>
+    </div>
+
+    <div class="full-diagram">
+        <div class="unit-diagram">
+            <h1>📆</h1>
+            <div class="title">
+                <h3 class="number">1</h3>
+                <h3>Choose Your Meal</h3>
+            </div>
+            <p>Browse our menu and choose your favorite dishes.</p>
+
+
+
+        </div>
+
+
+        <div class="unit-diagram">
+            <h1>🛒</h1>
+            <div class="title">
+                <h3 class="number">2</h3>
+                <h3>Add to Cart</h3>
+            </div>
+            <p>Add your items to cart and review your order.</p>
+
+
+
+        </div>
+
+        
+        <div class="unit-diagram">
+            <h1>💵</h1>
+            <div class="title">
+                <h3 class="number">3</h3>
+                <h3>Secure Payment</h3>
+            </div>
+            <p>Make secure payments using our safe methods</p>
+
+
+
+        </div>
+
+        <div class="unit-diagram">
+            <h1>🚚</h1>
+            <div class="title">
+                <h3 class="number">4</h3>
+                <h3>Fast Delivery</h3>
+            </div>
+            <p>We prepare and deliver hot food right to your doorstep</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="review">
+    <h1>WHAT OUR CUSTOMERS SAY</h1>
+    <div class="divblock">
+        <div class="divcard">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <h4>The jollof rice is simply the best! Always fresh and full of flavor.</h4>
+            <div class="subcard">
+                <img src="/images/Ellipse 2.png">
+                <h2>Adaora N.</h2>
+                <p>Abeokuta</p>
+            </div>
+        </div>
+    
+        <div class="divcard">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <h4>Their pasta and steak are amazing. My go-to spot every weekend. </h4>
+            <div class="subcard">
+                <img src="/images/Ellipse 2 (1).png">
+                <h2>James B.</h2>
+                <p>Abeokuta</p>
+            </div>
+        </div>
+
+        <div class="divcard">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <h4>Great service, fast delivery and delicious food every time!</h4>
+            <div class="subcard">
+                <img src="/images/Ellipse 2 (2).png">
+                <h2>Alex B.</h2>
+                <p>Abeokuta</p>
+            </div>
+        </div>
+
+        <div class="divcard">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <h4>Their swallow is the best around the town. Try and thank me later.</h4>
+            <div class="subcard">
+                <img src="/images/Ellipse 2 (4).png">
+                <h2>Gaius B.</h2>
+                <p>Abeokuta</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    </main>
+
+
+    <!-- <footer>
+        <div class="foot1">
+            <div class="foot2">
+               <img src="/Image/Frame 1000007295.png" alt="">
+               <p>2nd Floor,Oni Plaza, Alabata,Ogun State,Nigeria</p>
+               <p>Phone: +234 888 999 9999</p>
+               <p>Email:info@tastehaven.com</p>
+               <nav class="foot3">
+                 <a href="https://facebook.com"><img src="/Image/facebook.png" alt=""></a>
+                 <a href="https://twitter.com"><img src="/Image/twitter.png" alt=""></a>
+                 <a href="https://instagram.com"><img src="/Image/demo.png" alt=""></a>
+                 <a href="https://linkedin.com"><img src="/Image/linkedin.png" alt=""></a>
+               </nav>
+            </div>
+            <div class="foot2">
+                <h3>Quick Links</h3>
+                <a href="">Home</a>
+                <a href="">Menu</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="foot2">
+                <h3>Nigerian Cuisine</h3>
+                <a href="">Rice</a>
+                <a href="">Soups</a>
+                <a href="">Swallows</a>
+                <a href="">Desserts</a>
+            </div>
+            <div class="foot2">
+                <h3>International Cuisine</h3>
+                <a href="">Pizza</a>
+                <a href="">Pasta</a>
+                <a href="">Steaks</a>
+                <a href="">Desserts</a>
+            </div>
+            <div class="foot2">
+                <h3>Company</h3>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+        <section class="copyright">
+            &copy copyright<strong>Taste Haven.</strong>All Rights Reserved
+        </section>
+    </footer> -->
+<script src="script.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>

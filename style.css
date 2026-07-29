@@ -1,0 +1,1205 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    border: 0.5px solid black;
+    box-sizing: border-box;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 20px 10px;
+}
+
+main{
+    background-color: #F5F5DC;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.login-button1, .login-button2{
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 2px solid #FF0000;
+}
+
+.nav-links{
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 80px;
+    background-color: #8B0000;
+    padding: 10px 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+#menu:checked~.nav-links{
+    display: flex;
+}
+
+#menu{
+    display: none;
+}
+
+.hamburger{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.search-cart-login{
+    display: none;
+}
+
+#local{
+    color: #FF0000;
+}
+
+#global{
+    color: #8B0000;
+}
+
+.order-now-button{
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: 2px solid #FF0000;
+    margin-top: 30px;
+    font-size: 0.7rem;
+}
+
+.ratings{
+    display: block;
+    padding-top: 20px;
+}
+
+.hero-text1{
+    font-size: 0.5rem;
+}
+
+.hero-text2{
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.hero-image{
+    width: 100%;
+}
+
+#sliderImage{
+    width:100%;
+    animation: slideIn 0.8s ease;
+}
+
+.slide{
+    animation: slideIn 0.8s ease;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.cuisine-header{
+    color: #FF0000;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.nigerian-cuisine{
+    background-color: #8B0000;
+    /* display: flex; */
+    border-radius: 9px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.nigerian-menu-button{
+    background-color: #F5F5DC;
+    border: 2px solid #F5F5DC;
+    padding: 10px 30px;
+    border-radius: 6px;
+    color: #8B0000;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.nigerian-p1, .international-p1{
+    font-size: 0.9rem;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.nigerian-p, .international-p{
+    font-size: 0.7rem;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.pounded-yam-image, .lasagna-image{
+    width: 100%;
+}
+
+.international-cuisine{
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 9px;
+    /* display: flex; */
+}
+
+.international-menu-button{
+    background-color: #8B0000;
+    border: 2px solid #8B0000;
+    padding: 10px 30px;
+    border-radius: 6px;
+    color: #F5F5DC;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+
+/* / *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+}  */
+
+  body{
+    width: 100%;
+    height: auto;
+    
+}  
+  /* .featured{
+      padding:20px 5px;  
+     width: 100%;
+     height: auto;
+}    */
+
+.featured-container{
+    /* max-width: 1200px;  */
+    /* margin: auto;  */
+    background: #fff;
+    border-radius: 20px;
+    /* padding: 20px 20px; */
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.1);  */
+}
+
+.featured h2{
+    text-align: center;
+    color: #d62828;
+    font-size: 1.8rem;
+    /* margin-bottom: 10px;
+    margin: 20px 20px; */
+}
+
+.subtitle{
+    text-align: center;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Category Buttons */
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.categories button{
+    padding: 8px 18px;
+    border: 1px solid #999;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: .9rem;
+}
+
+.categories button:hover{
+    background: #d62828;
+    color: white;
+    border-color: #d62828;
+}
+
+/* Food Cards */
+
+.food-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.food-card{
+    background: white;
+    border-radius: 12px;
+     /* overflow: hidden; 
+     box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    transition: .3s; */
+}
+
+.food-card:hover{
+    transform: translateY(-5px);
+}
+
+.food-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.food-info{
+    padding: 15px;
+}
+
+.food-info small{
+    color: #d62828;
+}
+
+.food-info h3{
+    margin: 8px 0;
+    font-size: 1.2rem;
+}
+
+.food-info p{
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: .9rem;
+}
+
+.price-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: .95rem;
+    font-weight: bold;
+}
+
+.price{
+    color: #d62828;
+}
+
+.cart-btn{
+    width: 100%;
+    padding: 12px;
+    background: #d62828;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cart-btn:hover{
+    background: #b71c1c;
+}
+
+.explore-btn{
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 28px;
+    border: 1px solid #d62828;
+    color: #d62828;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+.explore-btn:hover{
+    background: #d62828;
+    color: white;
+}
+ .review{
+    width: 100%;
+    height: auto; 
+    background-color: #fdfaf5;
+     padding: 10px 5px;
+     padding-top: 50px;  
+} 
+.review h1{
+    text-align: center;
+    color: #FF0000;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.divblock{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.divcard{
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    transition: 0.3s ease;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.divcard h3{
+    color: gold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.divcard h4{
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.subcard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.subcard img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.subcard h2{
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.subcard p{
+    color: black;
+    font-size: 14px;
+}
+
+
+
+.head-text{
+    color: #FF0000;
+    justify-self: center;
+    font-size: 1.5rem;
+    font-weight:500;
+    letter-spacing: 0%;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0px;
+}
+.total-section{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    /* height: 450px; */
+    height: auto;
+    width: 100%;
+
+
+
+}
+
+.second-part-header, .second-part-sub{
+    padding: 20px;
+}
+
+.second-part{
+    background-color:#F7EFE5;
+    display: flex;
+    flex-direction:column;
+    border-radius: 12px;
+    gap: 15px;
+}
+
+
+.chef-image img{
+    width: 100%;
+
+    /* height:450px; */
+     height: auto; 
+}
+
+
+.second-part-text{
+    /* height:200px; */
+    text-align: center;
+    padding: 12px;
+}
+
+
+
+.items-1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    padding-bottom: 40px;
+
+}
+.items-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+
+}
+.unit-item{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.unit-item img{
+    height: 30px;
+    width: 30px;
+    background-color:#FFD6D680;
+    border-radius: 50%;
+    margin-top: 18px;
+
+}
+
+.third-part{
+    display: flex;
+    flex-direction: column;
+    background-color:#8B1E1E;
+    border-radius: 12px;
+    padding: px;
+}
+.text-content{
+    padding: 20px;
+
+}
+.text-content p{
+    letter-spacing: 0%;
+    font-style: light;
+    font-weight: 300;
+    line-height: 100%;
+    font-size: 0.9rem;
+    color: white;
+    padding: 20px;
+}
+.text-content h3{
+    font-family: Inter;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.jollof-button{
+    background: #FF0000;
+    border-radius: 10px;
+    width:100%;
+    height: auto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 2.2rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F7EFE5;
+    padding: 15px 2px;
+}
+
+.text-content h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 3rem;
+    line-height: 100%;
+    letter-spacing: -5%;
+    color:#FDD873;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.order-button{
+    background: #FFFFFF;
+    border: 1px solid #8B0000;
+    width:100%;
+    height:auto;
+    border-radius: 5px;
+    gap:8px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#8B0000;
+    padding: 15px;
+
+}
+.third-part img{
+    width:100%;
+    height: auto;
+
+
+    
+
+}
+.second-total-section{
+    background-color:white;
+    width:100%;
+    height: auto;
+    gap: 10px;
+}
+.section-text{
+text-align: center;
+}
+
+.section-text h2{
+font-weight: 500;
+font-style: Medium;
+font-size: 2rem;
+line-height: 100%;
+letter-spacing: 0%;
+color:#FF0000;
+padding-top: 100px;
+}
+
+.section-text p{
+font-weight: 400;
+font-style: Regular;
+font-size: 1.5rem;
+line-height: 100%;
+letter-spacing: 0%;
+color: #1E1E1E;
+padding: 20px 0px;
+}
+.full-diagram{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+
+
+.unit-diagram h1{
+    background-color: #FF0000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    justify-self: center;
+    
+
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-self: center;
+
+
+}
+.unit-diagram p{
+    justify-self: center;
+    margin-top: 20px;
+} 
+.number{
+    background-color: #8B1E1E;
+     width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    text-align: center;
+    color: #F7EFE5;
+}
+
+
+
+/*CSS for menu page*/
+.local-dishes-heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.line{
+    flex: 1;
+}
+
+.local-dishes-headingtext{
+    font-size: 0.8rem;       
+}
+
+.fifteen-dishes-box{
+    border: 2px solid rgb(114, 109, 109);
+    border-radius: 50px;
+    padding: 5px 5px;
+    background-color: rgb(207, 207, 207);
+}
+
+/*First row of local(swallow)*/
+.semo-section, .amala-section, .fufu-section{
+    width: 100%;
+    border: 1px solid #D60000;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+
+.semo, .amala, .fufu{
+
+
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.semo-text-section, .amala-text-section, .fufu-text-section{
+    padding: 15px 15px;
+}
+
+.semo-heading, .amala-heading, .fufu-heading{
+    font-weight: bold;
+}
+
+.semo-text, .amala-text, .fufu-text{
+    font-size: 0.6rem;
+    color: #8B0000;
+}
+
+
+
+.jollof-section, .native-section, .ofada-section{
+    width: 100%;
+    border: 1px solid #D60000;
+    border-radius: 20px;
+    margin: 20px 0px;    
+}
+
+.jollof, .native, .ofada{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.jollof-text-section, .native-text-section, .ofada-text-section{
+    padding: 15px 15px;
+}
+
+.jollof-heading, .native-heading, .ofada-heading{
+    font-weight: bold;
+}
+
+.jollof-text, .native-text, .ofada-text{
+    font-size: 0.6rem;
+    color: #8B0000;
+}
+
+.price{
+    color: #8B0000;
+}
+
+.price-and-addtocart{
+    display: flex;
+    gap: 65.9px;
+    padding-top: 15px;
+}
+
+#cart-button{
+    border: 0.2px solid #8B0000;
+    border-radius: 50px;
+    padding: 4px 20px;
+    color: #8B0000;
+}
+
+.swallow-section, .rice-dishes-section{
+    padding-top: 20px;
+}
+
+.section-header{
+    color: #8B0000;
+    font-size: 0.8rem;
+}
+
+.international-dishes-heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.line{
+    flex: 1;
+}
+
+.international-dishes-headingtext{
+    font-size: 0.8rem;
+}
+
+.six-dishes-box{
+    border: 2px solid rgb(114, 109, 109);
+    border-radius: 50px;
+    padding: 5px 5px;
+    background-color: rgb(207, 207, 207);
+}
+
+
+
+
+
+
+
+/*Side dishes*/
+.side-dishes{
+    width: 100%;
+    height:auto;
+   background-color:white;
+}
+.header{
+    font-size: 15px;
+    color:#8B0000;
+    letter-spacing: 20%;
+}
+.all-side-dishes{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+}
+.imgg{
+    width: 100%;
+    height: 30vh;
+    border-radius: 15px;
+}
+.dishes{
+    border:2px solid#8B00001A;
+    border-radius: 15px;
+}
+.section{
+    padding:5px;
+}
+.heading{
+    font-size: 17px;
+    font-weight: 500;
+    color:#000000;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    color: #8B0000;
+    width: 100%;
+}
+.text{
+    color:#8B0000;
+    font-size: 15px;
+    font-weight: 300;
+}
+.price-and-addtocart{
+    display: flex;
+    flex-direction: row;
+    gap:130px;
+}
+.price{
+    color: #8B0000;
+    font-size: 17px;
+    font-weight: 700;
+}
+#cart-button{
+    border-radius: 50px;
+    width: 100%;
+    height: 40px;
+    padding: 4px;
+    color:#8B0000;
+    font-size: 12px;
+    border:1px solid #8B0000;
+}
+
+
+
+
+
+/*First row of international(pasta)*/
+.spagetti-bolognese-section, .alfredo-pasta-section, .lasagna-section{
+    width: 100%;
+    border: 1px solid #D60000;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+
+.spagetti-bolognese, .alfredo-pasta, .lasagna{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.spagetti-text-section, .alfredo-text-section, .lasagna-text-section{
+    padding: 15px 15px;
+}
+
+.spagetti-heading, .alfredo-heading, .lasagna-heading{
+    font-weight: bold;
+}
+
+.spagetti-text, .alfredo-text, .lasagna-text{
+    font-size: 0.6rem;
+    color: #8B0000;
+}
+
+/*Second row of international(meat dishes) */
+
+.chicken-parmesan-section, .italian-meatball-section, .grilled-steak-section{
+    width: 100%;
+    border: 1px solid #D60000;
+    border-radius: 20px;
+    margin: 20px 0px;    
+}
+
+.chicken-parmesan, .italian-meatball, .grilled-steak{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.chicken-text-section, .meatball-text-section, .steak-text-section{
+    padding: 15px 15px;
+}
+
+.chicken-heading, .meatball-heading, .steak-heading{
+    font-weight: bold;
+}
+
+.chicken-text, .meatball-text, .steak-text{
+    font-size: 0.6rem;
+    color: #8B0000;
+}
+
+.price{
+    color: #8B0000;
+}
+
+.price-and-addtocart{
+    display: flex;
+    gap: 65.9px;
+    padding-top: 15px;
+}
+
+#cart-button{
+    border: 0.2px solid #8B0000;
+    border-radius: 50px;
+    padding: 4px 20px;
+    color: #8B0000;
+}
+
+.pasta-section, .meat-dishes-section{
+    padding-top: 20px;
+}
+
+.section-header{
+    color: #8B0000;
+    font-size: 0.8rem;
+}
+
+
+button{
+    cursor: pointer;
+}
+
+@media(min-width: 1024px){
+    nav{
+        padding: 0;
+        margin: 0;
+    }
+
+    .page-logo{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        gap: 20px;
+        padding: 0;
+        padding-top: 30px;
+        margin: 0 auto;
+        
+    }
+
+    #cart-link{
+        display: none;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .search-cart-login {
+        display: block;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    .login-button1{
+        display: none;
+    }
+
+    .login-button2{
+        padding: 10px 40px;
+    }
+
+    .hero-section{
+        display: flex;
+    }
+
+    .nigerian-cuisine{
+        display: flex;
+        /* width: 100%;
+        height: auto; */
+    }
+
+    .international-cuisine{
+        display: flex;
+    }
+
+    .browse-cuisine{
+        display: flex;
+        gap: 30px;
+        align-items: center; /*center vertically */
+        justify-content: center; /*center horizontally*//
+    }
+
+
+
+    /* .featured{
+    padding:80px 20px;
+    width: 85%;
+    height: auto;
+} */
+
+.featured-container{
+    padding:50px 6px;
+}
+
+.subtitle{
+    width:60%;
+} 
+
+.food-container{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.featured h2{
+    font-size:2.2rem;
+}
+
+.divblock{
+    display: flex;
+}
+
+
+
+.total-section{
+    display: flex;
+    flex-direction:row;
+    height: 450px;
+    width: 100%;
+}
+
+.second-part{
+    display: flex;
+    flex-direction:row;
+    width: 60%;
+   
+}
+
+.chef-image img{
+    height:450px;
+}
+
+
+.second-part-text{
+    display: block;
+    text-align:left;   
+}
+.items-1{
+    gap:10px;
+
+}
+.items-2{
+    gap: 10px;
+
+}
+.unit-item{
+    gap: 10px;
+}
+
+.third-part{
+    display: flex;
+      flex-direction: row;
+    width: 40%;
+}
+
+
+.text-content h3{
+    font-size: 1.35rem;
+}
+
+.jollof-button{
+    font-size: 2rem;
+    padding: 15px 4px;
+}
+
+.text-content h1{
+    font-size: 2.8rem;
+    text-align:left;
+}
+
+.third-part img{
+    width:350px;
+    height: 350px;
+
+}
+/* .second-total-section{
+    height: 310px;
+} */
+
+.full-diagram{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    width: 100%;
+    height: auto;
+}
+ .unit-diagram p{
+    margin-top:  0px; 
+}
+.jollof-button{
+    font-size: 1.5rem;
+    padding: 15px 2px;
+}
+.text-content h1{
+    font-size: 2rem;
+    text-align: center;
+   
+}
+
+
+
+
+    /*Desktop design for menu page*/
+
+
+
+    .all-swallow, .all-rice-dishes{
+        display: flex;
+        gap: 20px;
+    }
+
+    .semo, .amala, .fufu{
+        width: 100%;
+        max-height: 50%;
+    }
+
+    .semo, .amala {
+        height: 60vh;
+    }
+
+    .jollof, .native, .ofada{
+        width: 100%;
+        max-height: 50%;
+    }
+
+
+
+    /*Side dishes*/
+     .all-side-dishes{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 10px;
+}
+.imgg{
+    height:50vh;
+}
+#cart-button{
+    width: 30%;
+}
+.price-and-addtocart{
+    display: flex;
+    flex-direction: row;
+    gap:180px;
+}
+.text{
+    font-size: 15px;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    color: #8B0000;
+    width: 100%;
+}
+
+/*International dishes*/
+    .all-pasta, .all-meat-dishes{
+        display: flex;
+        gap: 20px;
+    }
+
+    .spagetti-bolognese, .alfredo-pasta, .lasagna{
+        width: 100%;
+        max-height: 50%;
+    }
+
+    .chicken-parmesan, .italian-meatball, .grilled-steak{
+        width: 100%;
+        max-height: 50%;
+    }
+
+    .spagetti-bolognese-section, .alfredo-pasta-section, .lasagna-section{
+        border: 2px solid #F5F5DC;
+        background-color: white;
+    }
+
+    .chicken-parmesan-section, .italian-meatball-section, .grilled-steak-section{
+        border: 2px solid #F5F5DC;
+        background-color: white;
+    }
+
+    .semo-section, .amala-section, .fufu-section{
+        border: 2px solid #F5F5DC;
+        background-color: white;
+    }
+
+    .jollof-section, .native-section, .ofada-section{
+        border: 2px solid #F5F5DC;
+        background-color: white;
+    }
+  
+}
